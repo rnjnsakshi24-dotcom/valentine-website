@@ -1,51 +1,46 @@
 body {
-  background: linear-gradient(to bottom, #ffe6eb, #fff);
-  font-family: 'Comic Sans MS', cursive;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  background: radial-gradient(circle, #ffe6f0, #ffd6e8);
+  font-family: 'Comic Sans MS', cursive;
+  overflow: hidden;
 }
 
 .container {
-  padding: 30px;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
 }
 
-h1 {
-  color: #ff4d6d;
-  font-size: 2.5rem;
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
 }
 
 .letter {
   background: rgba(255,255,255,0.8);
   padding: 20px;
   border-radius: 20px;
-  margin: 20px auto;
-  width: 85%;
-}
-
-.section {
-  background: rgba(255,255,255,0.85);
-  padding: 20px;
-  margin: 25px auto;
-  width: 85%;
-  border-radius: 25px;
 }
 
 .big {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 button {
-  padding: 10px 25px;
-  font-size: 1.1rem;
-  margin: 8px;
-  border: none;
+  padding: 12px 30px;
+  margin: 10px;
   border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 #yesBtn {
@@ -56,4 +51,18 @@ button:hover {
 #noBtn {
   background: white;
   color: #ff4d6d;
+}
+
+/* FLOATING HEARTS & KISSES */
+.floating::before {
+  content: "💖 💕 😘 💋 💓 💞";
+  position: fixed;
+  font-size: 3rem;
+  animation: float 10s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh) rotate(0deg); }
+  to { transform: translateY(-100vh) rotate(360deg); }
 }
