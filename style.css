@@ -32,3 +32,10 @@ button {
   background: white;
   color: #ff4d6d;
 }
+h2 {
+  color: #ff4d6d;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
