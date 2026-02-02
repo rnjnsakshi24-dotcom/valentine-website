@@ -40,3 +40,14 @@ function finalYes() {
     <p>You’re stuck with me now 😆💕</p>
   `;
 }
+function finalYes() {
+  document.body.innerHTML = `
+    <div style="padding:40px; text-align:center;">
+      <h1>For You, Bugiii 🐞💖</h1>
+      <p>I don’t promise perfection.</p>
+      <p>But I promise laughs, care, and choosing you every day.</p>
+      <p>You’re my favorite person, today and always.</p>
+      <h2>Happy Valentine’s Day 💘</h2>
+    </div>
+  `;
+}
